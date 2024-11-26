@@ -1,0 +1,768 @@
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+h2{
+    transition: transform 0.3s ease-in-out;
+}
+h2:hover {
+    transform: scale(1.1);
+}
+
+nav{
+    background-color: #101422;
+}
+#historia{
+    background-color: #272b3b;
+    width: auto;
+    height: 400px auto;
+
+}
+#historia .container{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.btn{
+    background-color: #A8Dce7;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out; 
+
+
+}
+.btn:hover{
+    background-color: #68b7c7;
+    color: #ffff;
+    transform: scale(1.15);  
+    z-index: 10;
+}
+.btn1{
+    border: 4px solido #101422;
+    background-color: #A8Dce7;
+    color: #101422;
+    border-radius: 8px;
+    padding: 0 40px;
+    transition: transform 0.3s ease-in-out; 
+
+
+}
+.btn1:hover{
+    background-color: #272b3bc6;
+    color: #ffff;
+    transform: scale(1.15);  
+    z-index: 10; 
+}
+#nosotros{
+    background-color: #A8Dce7;
+    width: auto;
+    height: 500px auto;
+    }
+    #nosotros  p{
+        color:#101422 ;
+        }
+.img-fluid {
+    transition: transform 0.3s ease-in-out;
+}
+.img-fluid:hover {
+    transform: rotate(5deg);
+}
+.circular {
+    width: 350px;  
+    height: 350px;
+    border-radius: 50%;  
+    object-fit: cover;  
+    animation: rotar 4s infinite alternate; 
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(15deg);  
+    }
+    100% {
+        transform: rotate(-15deg);  
+    }
+}
+
+.card {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    transform: scale(1.05);  
+    z-index: 10; 
+}
+
+#aplicaciones{
+    margin: 0 10px;
+
+}
+.carousel-item {
+    position: relative; 
+}
+
+.carousel-item::after {
+    content: ""; /* Crea una capa vacía */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 130, 163, 0.4); /* Color celeste con 40% de opacidad */
+    z-index: 1; /* Asegura que la capa esté sobre la imagen */
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0; 
+}
+
+
+
+
+
+
+/*CONTACTOS*/
+/* General */
+
+/* Contacto */
+.contact-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-info p,
+.contact-info ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Formulario */
+.contact-form {
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact-form .form-control {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.animate-input {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.animate-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón */
+.contact-form button {
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.text-muted{
+    text-align: justify;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*TIPOS*/
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas */
+.tech-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+    background: #fff;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen */
+.tech-img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out, box-shadow 0.4s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15); /* Sombra translúcida */
+}
+
+.tech-card:hover .tech-img {
+    transform: rotate(3deg) scale(1.1);
+    filter: brightness(85%);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa en hover */
+}
+
+/* Títulos */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.tech-card:hover .card-title {
+    color: #007bff;
+}
+
+
+/* Estilos generales */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffc107; /* Color dorado */
+}
+
+/* Estilos de los enlaces */
+.nav-link {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animación de hover */
+.nav-link:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Subrayado animado al pasar el mouse */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Animación del botón de navegación */
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg);
+}
+
+/* Cambio del fondo del navbar al hacer scroll */
+.navbar.scrolled {
+    background-color: #343a40; /* Color oscuro */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Configuración del fondo */
+#historia {
+    background: linear-gradient(135deg, rgba(30, 30, 60, 0.9), rgba(0, 0, 50, 0.7)), 
+                url('https://source.unsplash.com/1600x900/?technology,cloud') center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fondo animado */
+#historia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    mix-blend-mode: overlay;
+    animation: move-light 6s infinite alternate;
+}
+
+/* Animación del fondo */
+@keyframes move-light {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
+
+/* Estilo del título */
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Estilo del texto */
+.animated-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Botón animado */
+.animated-button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fade-in 1.5s ease-out forwards, button-pulse 2s infinite ease-in-out;
+    animation-delay: 1.5s;
+}
+
+.animated-button:hover {
+    background: #17a2b8;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(23, 162, 184, 0.5);
+}
+
+/* Keyframes de fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulso en el botón */
+@keyframes button-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Fondo y configuración de la sección */
+#tipos {
+    background-color: #f4f4f4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Título animado */
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fade-in 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+
+/* Animación de fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de las tarjetas */
+.animated-card {
+    opacity: 0;
+    transform: translateY(30px) rotateY(15deg); /* Rotación inicial */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    animation: fade-in-card 1s ease-out forwards;
+}
+
+/* Animación para las tarjetas */
+@keyframes fade-in-card {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotateY(15deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateY(0deg);
+    }
+}
+
+/* Efectos de la imagen en la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Efecto de zoom en la imagen al pasar el mouse */
+}
+
+/* Botón */
+.card-body .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Configuración de la fila y la columna */
+.row.g-4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Diseño de las tarjetas */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Mejoras de interactividad */
+.card:hover {
+    transform: scale(1.05) rotate(5deg); /* Rotación y zoom en las tarjetas */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto para la animación al hacer scroll */
+.is-visible .animated-card {
+    opacity: 1;
+    transform: translateY(0) rotateY(0deg);
+}
+
+.card-text-2{
+    text-align: justify;
+}
+
+/* General Styles for Section */
+section.py-5 {
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Text Styling for Paragraphs */
+section .container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+section .container p:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+section .container p:nth-child(3) {
+    animation-delay: 1s;
+}
+
+section .container p:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+section .container p:nth-child(5) {
+    animation-delay: 2s;
+}
+
+/* Strong Text for Emphasis */
+section .container strong {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+/* Animations for Fading and Sliding */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects for Section Title */
+.section-title:hover {
+    color: #0066cc;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Add Subtle Shadow on Text Hover */
+section .container p:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    section .container p {
+        font-size: 1rem;
+    }
+}
+
+/* Fade In for the whole section */
+section {
+    animation: fadeInSection 1s ease-out;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.animated-text-0{
+    color: #fff;
+}
+
+/* Contenedor principal */
+#aplicaciones {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+#aplicaciones h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+#aplicaciones p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Navegación lateral */
+#navbar-example3 {
+    position: sticky;
+    top: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar-example3 .nav-link {
+    color: #3498db;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#navbar-example3 .nav-link:hover {
+    color: #2c3e50;
+}
+
+#navbar-example3 .nav-pills .nav-link.active {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.scrollspy-example-2 {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrollspy-example-2 h4 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-top: 1.5rem;
+}
+
+.scrollspy-example-2 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.scrollspy-example-2 img {
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.scrollspy-example-2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto responsive */
+@media (max-width: 768px) {
+    #aplicaciones h2 {
+        font-size: 2rem;
+    }
+
+    #navbar-example3 {
+        position: static;
+        margin-bottom: 2rem;
+    }
+
+    .scrollspy-example-2 {
+        max-height: auto;
+    }
+}
+
+.video-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* General */
+#videos {
+    background: #f8f9fa;
+}
+
+#videos h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
